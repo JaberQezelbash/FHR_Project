@@ -1,0 +1,45 @@
+# Define the folder names and their corresponding number of files
+folders = {
+    "3c": 219, "6c": 140, "10c": 209, "14c": 322, "15c": 25,
+    "18c": 40, "23c": 79, "26c": 317, "27c": 196, "35c": 362,
+    "36c": 209, "37c": 342, "41c": 200, "42c": 151, "54c": 224,
+    "55c": 151, "56c": 119, "57c": 124, "58c": 118, "59c": 142,
+    "61c": 90, "62c": 169, "5s":89, "7s": 162, "13s": 80, "16s": 129,
+    "17s": 297, "20s": 202, "21s": 383, "25s": 134, "28s": 378,
+    "30s": 317, "34s": 81, "39s": 149, "40s": 303, "43s": 223,
+    "44s": 301, "45s": 388, "46s": 140, "47s": 265, "48s": 185,
+    "49s": 156, "50s": 38, "53s": 105
+}
+
+# Calculate total number of files
+total_files = sum(folders.values())
+
+# Calculate number of files each person should get
+files_per_person = total_files // 7
+
+# Initialize variables to store files for each person
+person_files = [[] for _ in range(7)]
+person_total_files = [0] * 7
+
+# Sort folders by their sizes (number of files)
+sorted_folders = sorted(folders.items(), key=lambda x: x[1], reverse=True)
+
+# Distribute files among people
+for folder, num_files in sorted_folders:
+    # Find the person with the smallest total size so far
+    min_person = min(range(7), key=lambda x: person_total_files[x])
+    
+    # Assign the folder to that person
+    person_files[min_person].append((folder, num_files))
+    person_total_files[min_person] += num_files
+
+# Write the output to a text file
+output_file_path = "C:/Users/Jaber/OneDrive - University of Florida/Educational/Research/FHRT/PROJECT/Codes//Basic/file_distribution/file_distribution.txt"
+with open(output_file_path, "w") as file:
+    for i, files in enumerate(person_files):
+        file.write(f"Person {i+1}:\n")
+        for f in files:
+            file.write(f"{f[0]}: {f[1]} files\n")
+        file.write(f"Total number of files: {person_total_files[i]} files\n\n")
+
+print("File distribution saved to:", output_file_path)

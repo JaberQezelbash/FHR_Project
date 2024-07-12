@@ -1,0 +1,65 @@
+Person 1: Mariana
+45s: 388 files
+43s: 223 files
+10c: 209 files
+62c: 169 files
+58c: 118 files
+34s: 81 files
+15c: 25 files
+Total number of files: 1213 files
+
+Person 2: Melanie
+21s: 383 files
+54c: 224 files
+3c: 219 files
+7s: 162 files
+25s: 134 files
+13s: 80 files
+Total number of files: 1202 files
+
+Person 3: Samantha
+28s: 378 files
+47s: 265 files
+41c: 200 files
+39s: 149 files
+16s: 129 files
+61c: 90 files
+Total number of files: 1211 files
+
+Person 4: Jaber
+35c: 362 files
+17s: 297 files
+48s: 185 files
+59c: 142 files
+6c: 140 files
+5s: 89 files
+Total number of files: 1215 files
+
+Person 5: Dr. Silva
+57c: 124 files
+53s: 105 files
+36c: 209 files
+37c: 342 files
+27c: 196 files
+55c: 151 files
+23c: 79 files
+Total number of files: 1206 files
+
+Person 6:
+14c: 322 files
+40s: 303 files
+49s: 156 files
+56c: 119 files
+44s: 301 files
+Total number of files: 1201 files
+
+Person 7:
+26c: 317 files
+30s: 317 files
+20s: 202 files
+42c: 151 files
+46s: 140 files
+18c: 40 files
+50s: 38 files
+Total number of files: 1205 files
+
